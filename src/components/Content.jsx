@@ -1,23 +1,60 @@
-import React from 'react';
-import imgContent from '../assets/efishery-1.png';
-import Button from '../components/Button';
-import wave from '../assets/wave.png';
+import React from 'react'
+import imgContent from '../assets/efishery-1.png'
+import imgContent2 from '../assets/efishery-2.png'
+import Button from '../components/Button'
+import Card from '../components/Card'
+import wave from '../assets/wave.png'
+import background2 from "../assets/background-2.jpg";
+import mengajar from "../assets/mengajar.jpeg";
+import rapat from "../assets/rapat.jpeg";
 
 const content = () => {
   return (
     <div>
-      <div className='grid md:grid-cols-2 grid-cols-1 gap-4 pt-10 px-20'>
+      <div className='flex flex-col-reverse md:flex-row gap-4 pt-10 px-20 justify-between'>
         <div className='flex flex-col justify-center'>
-          <h1 className='text-4xl my-10'>Meningkatkan daya saing <br /> UMKM <br /> <b>Di era digital</b></h1>
+          <h1 className='md:text-4xl text-2xl mt-10 mb-5'>Meningkatkan daya saing <br /> UMKM <br /> <b>Di era digital</b></h1>
           <div className='flex items-center'>
             <Button name='Baca Lebih Lanjut' />
           </div>
         </div>
         <div>
-          <img className='' src={imgContent} alt="" />
+          <img className='w-[600px]' src={imgContent} alt="" />
         </div>
       </div>
       <img className='mb-50' src={wave} alt="" />
+
+      <div className='flex flex-col-reverse md:flex-row gap-4 pt-10 p-20 justify-between bg-[#A57D10]'>
+        <div className='flex flex-col justify-center w-full'>
+          <h1 className='md:text-3xl text-xl mt-10 mb-2 font-bold'>
+            Memberi peluang untuk UMKM <br />agar lebih dikenal dalam masyarakat
+          </h1>
+          <h1 className='md:text-lg text-base '>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus sapiente assumenda obcaecati dolores voluptates ullam optio rerum beatae consectetur quos, ex ipsum. Neque omnis ab fugiat aliquid cumque fugit laborum!
+            Voluptatem aliquid error recusandae earum quas debitis nam quo ullam ab autem deserunt laborum officia animi voluptas magnam reiciendis, commodi, quisquam inventore? Praesentium debitis ex vero amet rem nemo minus!
+          </h1>
+        </div>
+        <div className='w-full'>
+          <img className='w-[600px]' src={imgContent2} alt="" />
+        </div>
+      </div>
+
+      <div className='relative md:h-[600px]'>
+        <img src={background2} className='h-full w-full inset-0 object-cover absolute' alt="" />
+        <div className="absolute inset-0 bg-white bg-opacity-70"></div>
+        <div className="flex flex-col justify-center h-full relative">
+          <h1 className="text-center mt-[100px] text-5xl font-bold ">
+            Kontribusi Kami Untuk Desa Cemara Jaya
+          </h1>
+          <div className='flex flex-col md:flex-row justify-between items-center w-[80%] mx-auto px-[50px] md:px-0 gap-12 py-[50px]'>
+          <Card img={mengajar} title='Dalam Bidang Pendidikan' text='Membantu tenaga pengajar di Sekolah Dasar (SD) dalam kegiatan belajar mengajar.'/>
+          <Card img={rapat} title='Untuk Kemajuan Desa' text='Melakukan rapat rutin pada setiap minggunya untuk mengetahui kebutuhan desa.'/>
+          <Card img={imgContent} title='Untuk UMKM' text='Membuat aplikasi sebagai media promotor UMKM agar lebih dikenal dalam masyarakat.'/>
+          </div>
+        </div>
+      </div>
+
+
     </div>
   )
 }

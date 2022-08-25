@@ -31,7 +31,7 @@ const Navbar = () => {
 
         <ul className={`md:flex md:items-center md:pb-0 pb-5 absolute md:static bg-white md:bg-transparent md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ' : 'top-[-490px]'} ${navbar ? 'text-black' : 'md:text-white'}`}>
           <li className={'md:ml-8 text-l md:my-0 my-7'}>
-            <a href="/" className={`${navbar ? 'hover:text-[#A57D10]' : 'hover:border-b-2 border-white'}`}>Tentang kami</a>
+            <a href="/" className={`${navbar ? 'hover:text-[#A57D10]' : 'hover:border-b-2 border-white'}`}>Tentang Desa</a>
           </li>
           <li className='md:ml-8 text-l md:my-0 my-7'>
             <a href="/" className={`${navbar ? 'hover:text-[#A57D10]' : 'hover:border-b-2 border-white'}`}>Produk</a>
