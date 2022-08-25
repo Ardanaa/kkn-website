@@ -5,25 +5,23 @@ import Content from "../components/Content";
 import Footer from "../components/Footer";
 import background from "../assets/background.png";
 
-function Home() {
+function About() {
 	return (
 		<div>
 			<Navbar
-				static1='border-b-2'
-				scroll1='text-[#A57D10]'
+				static1='hover:border-b-2'
+				scroll1='hover:text-[#A57D10]'
 				static2='hover:border-b-2 border-white'
 				scroll2='hover:text-[#A57D10]'
-				static3='hover:border-b-2 border-white'
-				scroll3='hover:text-[#A57D10]'
+				static3='border-b-2 border-white'
+				scroll3='text-[#A57D10]'
 			/>
 
-			<Hero title="Tumbuh Bersama Desa Cemara Jaya" img={background} />
+			<Hero title="This Is Us" img={background}/>
 
-			<Content />
-
-			<Footer />
+			<Footer/>
 		</div>
 	);
 }
 
-export default Home;
+export default About;

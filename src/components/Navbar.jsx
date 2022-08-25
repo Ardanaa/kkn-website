@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
-import { MenuIcon } from '@heroicons/react/outline'
 import logo from '../assets/logo.png'
 import logoMonotone from '../assets/logo-monotone.png'
 
-const Navbar = () => {
+const Navbar = (props) => {
   const [open, setOpen] = useState(false);
   const [navbar, setNavbar] = useState(false)
 
@@ -31,13 +30,13 @@ const Navbar = () => {
 
         <ul className={`md:flex md:items-center md:pb-0 pb-5 absolute md:static bg-white md:bg-transparent md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ' : 'top-[-490px]'} ${navbar ? 'text-black' : 'md:text-white'}`}>
           <li className={'md:ml-8 text-l md:my-0 my-7'}>
-            <a href="/" className={`${navbar ? 'hover:text-[#A57D10]' : 'hover:border-b-2 border-white'}`}>Tentang Desa</a>
+            <a href="/" className={`${navbar ? props.scroll1 :  props.static1}`}>Home</a>
           </li>
           <li className='md:ml-8 text-l md:my-0 my-7'>
-            <a href="/" className={`${navbar ? 'hover:text-[#A57D10]' : 'hover:border-b-2 border-white'}`}>Produk</a>
+            <a href="/about" className={`${navbar ? props.scroll2 :  props.static2}`}>Tentang Desa</a>
           </li>
           <li className='md:ml-8 text-l md:my-0 my-7'>
-            <a href="/" className={`${navbar ? 'hover:text-[#A57D10]' : 'hover:border-b-2 border-white'}`}>Kontributor</a>
+            <a href="/contributor" className={`${navbar ? props.scroll3 :  props.static3}`}>Kontributor</a>
           </li>
         </ul>
       </div>
