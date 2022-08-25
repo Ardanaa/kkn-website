@@ -8,20 +8,20 @@ const Footer = () => {
 <footer class="p-4 bg-gray-900 sm:p-6">
     <div class="md:flex md:justify-between">
         <div class="mb-6 md:mb-0">
-            <a href="https://flowbite.com/" class="flex items-center">
+            <a href="" class="flex items-center">
                 <img src={logo} class="mr-3 h-14" alt="KKN Logo"/>
                 <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">KKN Unsika 2022</span>
             </a>
         </div>
         <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
-                <h2 class="mb-6 text-sm font-semibold text-white uppercase">Resources</h2>
+                <h2 class="mb-6 text-sm font-semibold text-white uppercase">Pages</h2>
                 <ul class="text-gray-600">
                     <li class="mb-4">
-                        <a href="https://flowbite.com/" class="hover:underline">FlowBite</a>
+                        <a href="" class="hover:underline">Tentang Desa</a>
                     </li>
                     <li>
-                        <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
+                        <a href="" class="hover:underline">Kontributor</a>
                     </li>
                 </ul>
             </div>
