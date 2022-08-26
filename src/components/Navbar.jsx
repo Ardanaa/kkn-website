@@ -8,11 +8,12 @@ import {
 } from "@material-tailwind/react";
 import logo from '../assets/logo.png'
 import logoMonotone from '../assets/logo-monotone.png'
- 
+import { Link } from "react-router-dom";
+
 export default function Nav(props) {
   const [openNav, setOpenNav] = useState(false);
   const [navbar, setNavbar] = useState(false)
- 
+
   useEffect(() => {
     window.addEventListener(
       "resize",
@@ -30,42 +31,42 @@ export default function Nav(props) {
   }
 
   window.addEventListener("scroll", changeNavbar)
- 
+
   const navList = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-      <Typography
-        as="li"
-        variant="small"
-        color="white"
-        className={`p-1 font-normal ${navbar ? props.scroll1 :  props.static1}`}
-      >
-        <a href="/" className="flex items-center">
+      <Link to="/">
+        <Typography
+          as="li"
+          variant="small"
+          color="white"
+          className={`p-1 font-normal ${navbar ? props.scroll1 : props.static1}`}
+        >
           Home
-        </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="white"
-        className={`p-1 font-normal ${navbar ? props.scroll2 :  props.static2}`}
-      >
-        <a href="/about" className="flex items-center">
+        </Typography>
+      </Link>
+      <Link to="/about">
+        <Typography
+          as="li"
+          variant="small"
+          color="white"
+          className={`p-1 font-normal ${navbar ? props.scroll2 : props.static2}`}
+        >
           Tentang Desa
-        </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="white"
-        className={`p-1 font-normal ${navbar ? props.scroll3 :  props.static3}`}
-      >
-        <a href="/contributor" className="flex items-center">
+        </Typography>
+      </Link>
+      <Link to="/contributor">
+        <Typography
+          as="li"
+          variant="small"
+          color="white"
+          className={`p-1 font-normal ${navbar ? props.scroll3 : props.static3}`}
+        >
           Kontributor
-        </a>
-      </Typography>
+        </Typography>
+      </Link>
     </ul>
   );
- 
+
   return (
     <Navbar className={`mx-auto fixed z-10 w-full rounded-none border-0 py-2 px-4 lg:px-8 lg:py-4 ${navbar ? 'bg-[#EDE5CF]' : 'bg-transparent'}`}>
       <div className="container mx-auto flex items-center justify-between text-white">

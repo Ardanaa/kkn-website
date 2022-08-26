@@ -4,9 +4,10 @@ import imgContent2 from '../assets/efishery-2.png'
 import Button from '../components/Button'
 import Card from '../components/Card'
 import wave from '../assets/wave.png'
-import background2 from "../assets/background-2.jpg";
-import mengajar from "../assets/mengajar.jpeg";
-import rapat from "../assets/rapat.jpeg";
+import background2 from "../assets/background-2.jpg"
+import mengajar from "../assets/mengajar.jpeg"
+import rapat from "../assets/rapat.jpeg"
+import { Link } from 'react-router-dom'
 
 const content = () => {
   return (
@@ -14,10 +15,12 @@ const content = () => {
       <div className='flex flex-col-reverse md:flex-row gap-4 md:px-20 pt-10 px-10 justify-between'>
         <div className='flex flex-col justify-center w-full'>
           <h1 className='md:text-xl text-xl mt-10 mb-5'>
-          Desa Cemarajaya terbentuk dalam proses yang panjang sejak jaman Kolonial Belanda dahulu, jaman perang kemerdekaan, serta jaman kemerdekaan sekarang, sehingga terbentuk sebuah komunitas dengan karakter sosial, budaya, dan ekonomi yang membumi dalam wilayah yang sekarang secara administratif disebut Desa Cemarajaya.
+            Desa Cemarajaya terbentuk dalam proses yang panjang sejak jaman Kolonial Belanda dahulu, jaman perang kemerdekaan, serta jaman kemerdekaan sekarang, sehingga terbentuk sebuah komunitas dengan karakter sosial, budaya, dan ekonomi yang membumi dalam wilayah yang sekarang secara administratif disebut Desa Cemarajaya.
           </h1>
           <div className='flex items-center justify-center'>
-            <Button name='Baca Lebih Lanjut' />
+            <Link to='/about'>
+              <Button name='Baca Lebih Lanjut' />
+            </Link>
           </div>
         </div>
         <div className='w-full'>
@@ -49,9 +52,9 @@ const content = () => {
             Kontribusi Kami Untuk Desa Cemara Jaya
           </h1>
           <div className='flex flex-col md:flex-row justify-between items-center w-[80%] mx-auto px-[50px] md:px-0 gap-12 py-[50px]'>
-          <Card img={mengajar} title='Dalam Bidang Pendidikan' text='Membantu tenaga pengajar di Sekolah Dasar (SD) dalam kegiatan belajar mengajar.'/>
-          <Card img={rapat} title='Untuk Kemajuan Desa' text='Melakukan rapat rutin pada setiap minggunya untuk mengetahui kebutuhan desa.'/>
-          <Card img={imgContent} title='Untuk UMKM' text='Membuat aplikasi sebagai media promotor UMKM agar lebih dikenal dalam masyarakat.'/>
+            <Card img={mengajar} title='Dalam Bidang Pendidikan' text='Membantu tenaga pengajar di Sekolah Dasar (SD) dalam kegiatan belajar mengajar.' />
+            <Card img={rapat} title='Untuk Kemajuan Desa' text='Melakukan rapat rutin pada setiap minggunya untuk mengetahui kebutuhan desa.' />
+            <Card img={imgContent} title='Untuk UMKM' text='Membuat aplikasi sebagai media promotor UMKM agar lebih dikenal dalam masyarakat.' />
           </div>
         </div>
       </div>
