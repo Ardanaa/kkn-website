@@ -11,20 +11,20 @@ import rapat from "../assets/rapat.jpeg";
 const content = () => {
   return (
     <div>
-      <div className='flex flex-col-reverse md:flex-row gap-4 pt-10 px-20 justify-between'>
-        <div className='flex flex-col justify-center'>
-          <h1 className='md:text-4xl text-2xl mt-10 mb-5'>Meningkatkan daya saing <br /> UMKM <br /> <b>Di era digital</b></h1>
-          <div className='flex items-center'>
+      <div className='flex flex-col-reverse md:flex-row gap-4 md:px-20 pt-10 px-10 justify-between'>
+        <div className='flex flex-col justify-center w-full'>
+          <h1 className='md:text-4xl text-xl text-center mt-10 mb-5'>Meningkatkan daya saing <br /> UMKM <br /> <b>Di Era Digital</b></h1>
+          <div className='flex items-center justify-center'>
             <Button name='Baca Lebih Lanjut' />
           </div>
         </div>
-        <div>
+        <div className='w-full'>
           <img className='w-[600px]' src={imgContent} alt="" />
         </div>
       </div>
       <img className='mb-50' src={wave} alt="" />
 
-      <div className='flex flex-col-reverse md:flex-row gap-4 pt-10 p-20 justify-between bg-[#A57D10]'>
+      <div className='flex flex-col-reverse md:flex-row gap-4 pt-10 md:p-20 p-10 justify-between bg-[#A57D10]'>
         <div className='flex flex-col justify-center w-full'>
           <h1 className='md:text-3xl text-xl mt-10 mb-2 font-bold'>
             Memberi peluang untuk UMKM <br />agar lebih dikenal dalam masyarakat

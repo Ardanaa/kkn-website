@@ -8,8 +8,8 @@ import {
  
 export default function CardContent(props) {
   return (
-    <Card className="w-96">
-      <CardHeader color="blue" className="relative h-56">
+    <Card className="w-80">
+      <CardHeader color="blue-gray" className="relative h-56">
         <img
           src={props.img}
           alt="img-blur-shadow"
