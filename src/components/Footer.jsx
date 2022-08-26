@@ -45,7 +45,7 @@ const Footer = () => {
                     </div>
                     <div>
                         <h2 class="mb-6 text-sm font-semibold text-white uppercase">Download Aplikasi Desa</h2>
-                        <a href='https://doc-08-60-docs.googleusercontent.com/docs/securesc/i87k325t80kqh0mfbmu3us8skrcln79o/6ieo6etuidf3pp227cnteqe6mq7iie9b/1661516325000/17120867478208595539/17120867478208595539/18ZB_WXe9iNxkXa1dGKIgIn8FcxenFJjz?e=download&ax=AI9vYm44soHmANQisdPcoe4CnJcysnb_WQbiC8JFjYq9SkyoQXLk5tnqL_ROtFWYMQgiZKY9VDnoDSFOhcKu7eKlMD8rrIcFfpysVMXUhbLiaUcnWFfqndyArwor7vjgfP4BmSNWtlHL4_PC8isDl5dFMufFsxbz2Bc-5rjJYW6CFRHSQQH0FNZmZRWqMdPgHbeWpSIkfaFtYGvrF4Hp2iWlq0qV2bsXNa6Znp4ZfJ0SUB308W1QmqNELEB6823CzqtXSx1l7Dq-T_kSonj0xvcKjcQoBpRg3DuB0uvxZp2mx_RNr815B9i93mkWAoNKbmGmndRnsWx3KBz9Yr1-eglM4ze8LfVmMHHNTzlNyza1OcAyyL0hABwl6RJdoe72D3CNB7TMokoTZeDHWZxcJwl136IWhoUrU6Jfj9FWEN9DE7ib7wbpXP-Wz10YhmwEnj6aCNctVyAZTwGr-tF72epgmeKx2dWCjn_AiP_GaGfBbgrWd9RA6z5u4AhO0vZBdiq9Hc5whCZmb1cSusElQtWEGYTMU6mRKEL3sOOjR12EYVfy17LzdDYf-ZGNdO3fNR5SWD4lidMb4F1xVolzPnOLRA90S2seahbhZU7PryhgOpaVrbKxm2CbBkzNIEjXr_5kOTqMpBSHUPtCt2RIedkmIo4o_x4MVRqw0p9BNDt-dt_la0sKzThNn9FE6jJvGX-mHzVsM970-Qd_luEOhNRRWOJBiO3ysqYtW493U-UtZ7sir_1OCGOi2pw&uuid=eb6b2b3c-063b-4460-8392-e8f7a4d8c268&authuser=0&nonce=4vm2hj8rf1akk&user=17120867478208595539&hash=d385phvnt4ruq9qson3sa03r712s545s'>
+                        <a href='https://drive.google.com/file/d/18ZB_WXe9iNxkXa1dGKIgIn8FcxenFJjz/view?usp=sharing'>
                             <Button name='Download disini' />
                         </a>
                     </div>
