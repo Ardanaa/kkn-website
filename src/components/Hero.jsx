@@ -6,7 +6,7 @@ const Hero = (props) => {
       <img src={props.img} className="h-full inset-0 w-full object-cover absolute" alt="background" />
       <div className="absolute inset-0 bg-gradient-to-b from-gray-900 to-transparent bg-opacity-50"></div>
       <div className="flex items-center justify-center h-full relative">
-        <h1 className="text-center text-5xl font-bold text-teal-100">
+        <h1 className="text-center text-5xl font-bold text-white">
           {props.title}
         </h1>
       </div>

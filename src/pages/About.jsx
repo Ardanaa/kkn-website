@@ -1,9 +1,9 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
-import Content from "../components/Content";
+import ContentAbout from "../components/ContentAbout";
 import Footer from "../components/Footer";
-import background from "../assets/background.png";
+import background3 from "../assets/background-3.png";
 
 function About() {
 	return (
@@ -17,7 +17,9 @@ function About() {
 				scroll3='hover:text-[#A57D10]'
 			/>
 
-			<Hero title="Desa Cemara Jaya" img={background}/>
+			<Hero title="Desa Cemara Jaya" img={background3}/>
+
+			<ContentAbout/>
 
 			<Footer/>
 		</div>
