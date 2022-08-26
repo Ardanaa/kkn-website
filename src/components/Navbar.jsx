@@ -1,10 +1,24 @@
-import React, { useState } from 'react'
+import { useState, useEffect } from "react";
+import {
+  Navbar,
+  MobileNav,
+  Typography,
+  Button,
+  IconButton,
+} from "@material-tailwind/react";
 import logo from '../assets/logo.png'
 import logoMonotone from '../assets/logo-monotone.png'
-
-const Navbar = (props) => {
-  const [open, setOpen] = useState(false);
+ 
+export default function Nav(props) {
+  const [openNav, setOpenNav] = useState(false);
   const [navbar, setNavbar] = useState(false)
+ 
+  useEffect(() => {
+    window.addEventListener(
+      "resize",
+      () => window.innerWidth >= 960 && setOpenNav(false)
+    );
+  }, []);
 
   const changeNavbar = () => {
     console.log(window.scrollY)
@@ -16,32 +30,95 @@ const Navbar = (props) => {
   }
 
   window.addEventListener("scroll", changeNavbar)
-
+ 
+  const navList = (
+    <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+      <Typography
+        as="li"
+        variant="small"
+        color="white"
+        className={`p-1 font-normal ${navbar ? props.scroll1 :  props.static1}`}
+      >
+        <a href="/" className="flex items-center">
+          Home
+        </a>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="white"
+        className={`p-1 font-normal ${navbar ? props.scroll2 :  props.static2}`}
+      >
+        <a href="/about" className="flex items-center">
+          Tentang Desa
+        </a>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="white"
+        className={`p-1 font-normal ${navbar ? props.scroll3 :  props.static3}`}
+      >
+        <a href="/contributor" className="flex items-center">
+          Kontributor
+        </a>
+      </Typography>
+    </ul>
+  );
+ 
   return (
-    <div className={`shadow-md w-full fixed top-0 left-0 z-10 transition-all duration-200 ease-in ${navbar ? 'bg-[#EDE5CF]' : ''}`}>
-      <div className='md:flex items-center justify-between bg-transparent py-4 md:px-10 px-7'>
-        <div className='font-bold text-2xl cursor-pointer flex items-center text-gray-800'>
-          <img className='h-[60px]' src={navbar ? logo : logoMonotone} alt="logo" />
-        </div>
-
-        <div onClick={() => setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden '>
-          <ion-icon name={open ? 'close' : 'menu'}></ion-icon>
-        </div>
-
-        <ul className={`md:flex md:items-center md:pb-0 pb-5 absolute md:static bg-white md:bg-transparent md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ' : 'top-[-490px]'} ${navbar ? 'text-black' : 'md:text-white'}`}>
-          <li className={'md:ml-8 text-l md:my-0 my-7'}>
-            <a href="/" className={`${navbar ? props.scroll1 :  props.static1}`}>Home</a>
-          </li>
-          <li className='md:ml-8 text-l md:my-0 my-7'>
-            <a href="/about" className={`${navbar ? props.scroll2 :  props.static2}`}>Tentang Desa</a>
-          </li>
-          <li className='md:ml-8 text-l md:my-0 my-7'>
-            <a href="/contributor" className={`${navbar ? props.scroll3 :  props.static3}`}>Kontributor</a>
-          </li>
-        </ul>
+    <Navbar className={`mx-auto fixed z-10 w-full rounded-none border-0 py-2 px-4 lg:px-8 lg:py-4 ${navbar ? 'bg-[#EDE5CF]' : 'bg-transparent'}`}>
+      <div className="container mx-auto flex items-center justify-between text-white">
+        <Typography
+          as="a"
+          href="/"
+          variant="small"
+          className="mr-4 cursor-pointer py-1.5 font-normal"
+        >
+          <img className='h-[50px]' src={navbar ? logo : logoMonotone} alt="logo" />
+        </Typography>
+        <div className="hidden lg:block">{navList}</div>
+        <IconButton
+          variant="text"
+          className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+          ripple={false}
+          onClick={() => setOpenNav(!openNav)}
+        >
+          {openNav ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              className="h-6 w-6"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          ) : (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          )}
+        </IconButton>
       </div>
-    </div>
-  )
+      <MobileNav open={openNav}>
+        {navList}
+      </MobileNav>
+    </Navbar>
+  );
 }
-
-export default Navbar
