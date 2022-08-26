@@ -13,7 +13,9 @@ const content = () => {
     <div>
       <div className='flex flex-col-reverse md:flex-row gap-4 md:px-20 pt-10 px-10 justify-between'>
         <div className='flex flex-col justify-center w-full'>
-          <h1 className='md:text-4xl text-xl text-center mt-10 mb-5'>Meningkatkan daya saing <br /> UMKM <br /> <b>Di Era Digital</b></h1>
+          <h1 className='md:text-xl text-xl mt-10 mb-5'>
+          Desa Cemarajaya terbentuk dalam proses yang panjang sejak jaman Kolonial Belanda dahulu, jaman perang kemerdekaan, serta jaman kemerdekaan sekarang, sehingga terbentuk sebuah komunitas dengan karakter sosial, budaya, dan ekonomi yang membumi dalam wilayah yang sekarang secara administratif disebut Desa Cemarajaya.
+          </h1>
           <div className='flex items-center justify-center'>
             <Button name='Baca Lebih Lanjut' />
           </div>
