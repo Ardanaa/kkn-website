@@ -23,7 +23,6 @@ const Team = () => {
     { 'name': 'Dhea Sephira', 'major': 'Pendidikan Matematika | Humas', 'image': 'https://res.cloudinary.com/ardanacloud/image/upload/v1661780146/Kegiatan%20KKN/Profiel%20KKN%20v2/5_rfmkao.png' },
     { 'name': 'Deanisa Septianingrum', 'major': 'Gizi | Humas', 'image': 'https://res.cloudinary.com/ardanacloud/image/upload/v1661780154/Kegiatan%20KKN/Profiel%20KKN%20v2/6_sjl7hl.png' },
     { 'name': 'Mohamad Bijantium Sinatria', 'major': 'Ilmu Komputer | Kordiv Logistik', 'image': 'https://res.cloudinary.com/ardanacloud/image/upload/v1661780146/Kegiatan%20KKN/Profiel%20KKN%20v2/1_vfyeil.png' },
-    { 'name': 'Pebriansyah Saputra', 'major': 'Ilmu Pemerintahan | Logistik', 'image': 'https://res.cloudinary.com/ardanacloud/image/upload/v1661775352/Profile%20Team%20KKN/Pebriyansah_Saputra__vafd50.jpg' },
     { 'name': 'Moch. Teguh Raharjo', 'major': 'Ilmu Hukum | Logistik', 'image': 'https://res.cloudinary.com/ardanacloud/image/upload/v1661780154/Kegiatan%20KKN/Profiel%20KKN%20v2/2_asq2hl.png' },
     { 'name': 'Uju Pitriyani', 'major': 'Manajemen | Logistik', 'image': 'https://res.cloudinary.com/ardanacloud/image/upload/v1661780151/Kegiatan%20KKN/Profiel%20KKN%20v2/3_hwoprn.png' },
   ];
