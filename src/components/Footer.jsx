@@ -10,7 +10,7 @@ const Footer = () => {
             <div class="md:flex md:justify-between">
                 <div class="mb-6 md:mb-0">
                     <a href="" class="flex items-center">
-                        <img src={logoDesaWhite} class="mr-3 h-40" alt="KKN Logo" />
+                        <img src={logoDesaWhite} class="mr-3 h-14 lg:h-40" alt="KKN Logo" />
                         <span class="self-center text-2xl font-semibold whitespace-nowrap text-white"></span>
                     </a>
                 </div>
