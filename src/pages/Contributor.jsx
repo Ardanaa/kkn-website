@@ -5,6 +5,7 @@ import Content from "../components/Content";
 import Footer from "../components/Footer";
 import background from "../assets/background.png";
 import Team from "../components/Team"
+import Activity from "../components/Activity"
 
 function About() {
 	return (
@@ -21,6 +22,8 @@ function About() {
 			<Hero title="Our Team" img={background}/>
 
 			<Team/>
+
+			<Activity/>
 
 			<Footer/>
 		</div>
