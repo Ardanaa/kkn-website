@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import Content from "../components/Content";
 import Footer from "../components/Footer";
 import background from "../assets/background.png";
+import Team from "../components/Team"
 
 function About() {
 	return (
@@ -17,7 +18,9 @@ function About() {
 				scroll3='text-[#A57D10]'
 			/>
 
-			<Hero title="This Is Us" img={background}/>
+			<Hero title="Our Team" img={background}/>
+
+			<Team/>
 
 			<Footer/>
 		</div>
