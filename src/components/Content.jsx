@@ -1,5 +1,6 @@
 import React from 'react'
 import imgContent from '../assets/efishery-1.png'
+import kantorDesa from '../assets/kantorDesa.jpeg'
 import imgContent2 from '../assets/efishery-2.png'
 import Button from '../components/Button'
 import Card from '../components/Card'
@@ -12,7 +13,7 @@ import { Link } from 'react-router-dom'
 const content = () => {
   return (
     <div>
-      <div className='flex flex-col-reverse md:flex-row gap-4 md:px-20 pt-10 px-10 justify-between'>
+      <div className='flex flex-col-reverse md:flex-row gap-4 md:px-20 pt-20 px-10 justify-between'>
         <div className='flex flex-col justify-center w-full'>
           <h1 className='md:text-xl text-xl mt-10 mb-5'>
             Desa Cemarajaya terbentuk dalam proses yang panjang sejak jaman Kolonial Belanda dahulu, jaman perang kemerdekaan, serta jaman kemerdekaan sekarang, sehingga terbentuk sebuah komunitas dengan karakter sosial, budaya, dan ekonomi yang membumi dalam wilayah yang sekarang secara administratif disebut Desa Cemarajaya.
@@ -23,8 +24,8 @@ const content = () => {
             </Link>
           </div>
         </div>
-        <div className='w-full'>
-          <img className='w-[600px]' src={imgContent} alt="" />
+        <div className='w-full flex justify-center'>
+          <img className='w-[600px]' src={kantorDesa} alt="" />
         </div>
       </div>
       <img className='mb-50' src={wave} alt="" />
@@ -39,7 +40,7 @@ const content = () => {
             Voluptatem aliquid error recusandae earum quas debitis nam quo ullam ab autem deserunt laborum officia animi voluptas magnam reiciendis, commodi, quisquam inventore? Praesentium debitis ex vero amet rem nemo minus!
           </h1>
         </div>
-        <div className='w-full'>
+        <div className='w-full flex justify-center'>
           <img className='w-[600px]' src={imgContent2} alt="" />
         </div>
       </div>
