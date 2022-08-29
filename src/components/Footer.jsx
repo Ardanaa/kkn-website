@@ -39,7 +39,10 @@ const Footer = () => {
                         <h2 class="mb-6 text-sm font-semibold text-white uppercase">Follow us</h2>
                         <ul class="text-gray-600">
                             <li class="mb-4">
-                                <a href="https://www.instagram.com/kknunsika22_cemarajaya/" rel='noreferrer' target='_blank' class="hover:underline ">Instagram</a>
+                                <a href="https://www.instagram.com/kknunsika22_cemarajaya/" rel='noreferrer' target='_blank' class="hover:underline ">Instagram KKN</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="https://instagram.com/desa_cemarajaya/" rel='noreferrer' target='_blank' class="hover:underline ">Instagram Desa </a>
                             </li>
                         </ul>
                     </div>
