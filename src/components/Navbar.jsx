@@ -6,6 +6,8 @@ import {
   Button,
   IconButton,
 } from "@material-tailwind/react";
+import logoDesa from '../assets/logoDesa.png'
+import logoDesaWhite from '../assets/logoDesaWhite.png'
 import logo from '../assets/logo.png'
 import logoMonotone from '../assets/logo-monotone.png'
 import { Link } from "react-router-dom";
@@ -76,7 +78,7 @@ export default function Nav(props) {
           variant="small"
           className="mr-4 cursor-pointer py-1.5 font-normal"
         >
-          <img className='h-[50px]' src={navbar ? logo : logoMonotone} alt="logo" />
+          <img className='h-[50px]' src={navbar ? logoDesa : logoDesaWhite} alt="logo" />
         </Typography>
         <div className="hidden lg:block">{navList}</div>
         <IconButton

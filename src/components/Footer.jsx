@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../assets/logo.png'
+import logoDesaWhite from '../assets/logoDesaWhite.png'
 import Button from './Button'
 
 const Footer = () => {
@@ -10,8 +10,8 @@ const Footer = () => {
             <div class="md:flex md:justify-between">
                 <div class="mb-6 md:mb-0">
                     <a href="" class="flex items-center">
-                        <img src={logo} class="mr-3 h-14" alt="KKN Logo" />
-                        <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">KKN Unsika 2022</span>
+                        <img src={logoDesaWhite} class="mr-3 h-40" alt="KKN Logo" />
+                        <span class="self-center text-2xl font-semibold whitespace-nowrap text-white"></span>
                     </a>
                 </div>
                 <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
