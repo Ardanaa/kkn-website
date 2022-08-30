@@ -1,6 +1,7 @@
 import React from 'react'
 import wave from '../assets/wave.png'
 import peta from "../assets/peta-desa.png"
+import { IGEmbed } from 'react-ig-embed';
 
 const ContentAbout = () => {
   return (
@@ -16,13 +17,17 @@ const ContentAbout = () => {
           <h1 className='md:text-3xl text-xl mt-10 mb-2 font-bold'>
             Demografi
           </h1>
-          <h1 className='md:text-lg text-base '>
+          <h1 className='md:text-lg text-base pb-10 md:pb-0 '>
             Terletak / berada disebelah Utara   dari kota Kecamatan CIBUAYA  dengan jarak 6,5 km dan dari Kota Kabupaten Karawang 32 km, berbatasan dengan Desa Jayamulya disebelah selatan, berbatasan dengan Desa Sungaibuntu disebelah timur, berbatasan dengan Desa Jayamulya disebelah Barat dan berbatasan dengan Laut Jawa disebelah Utara.
           </h1>
         </div>
         <div className='flex w-full items-center justify-center'>
-          <img className='w-500px]' src={peta} alt="" />
+          <img className='' src={peta} alt="" />
         </div>
+      </div>
+
+      <div className='flex justify-center py-10'>
+        <IGEmbed className='w-[326px]' url="https://www.instagram.com/reel/ChmnOrRp0hI/?utm_source=ig_web_copy_link" />
       </div>
 
     </div>
