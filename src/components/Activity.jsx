@@ -45,7 +45,7 @@ const Activity = () => {
           {data.map(data =>
             <div class="xl:w-1/4 md:w-1/2 p-4 mx-auto">
               <div class="bg-gray-100 p-6 rounded-lg h-full">
-                <img class="h-40 rounded min-w-[326px] md:min-w-full mx-auto object-cover object-center mb-6" src={data.image} alt="content" />
+                <img class="h-40 rounded min-w-[320px] md:min-w-full mx-auto object-cover object-center mb-6" src={data.image} alt="content" />
                 <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">{data.date}</h3>
                 <p class="">{data.title}</p>
               </div>
