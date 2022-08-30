@@ -70,7 +70,7 @@ export default function Nav(props) {
   );
 
   return (
-    <Navbar fullwidth='true' className={`mx-auto fixed z-10 w-full rounded-none border-0 py-2 px-4 lg:px-8 lg:py-4 ${navbar ? 'bg-[#EDE5CF]' : 'bg-transparent'}`}>
+    <Navbar fullwidth='true' className={`mx-auto fixed z-10 max-w-screen-5xl rounded-none border-0 py-2 px-4 lg:px-8 lg:py-4 ${navbar ? 'bg-[#EDE5CF]' : 'bg-transparent'}`}>
       <div className="container mx-auto flex items-center justify-between text-white">
         <Typography
           as="a"
