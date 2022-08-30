@@ -17,7 +17,7 @@ function About() {
 				scroll3='hover:text-[#A57D10]'
 			/>
 
-			<Hero title="Desa Cemara Jaya" img={background3}/>
+			<Hero textSize='text-5xl' title="Desa Cemara Jaya" img={background3}/>
 
 			<ContentAbout/>
 

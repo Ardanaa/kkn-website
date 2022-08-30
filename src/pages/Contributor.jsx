@@ -19,7 +19,7 @@ function About() {
 				scroll3='text-[#A57D10]'
 			/>
 
-			<Hero title="Our Team" img={background}/>
+			<Hero textSize='text-7xl' title="Our Team" img={background}/>
 
 			<Team/>
 

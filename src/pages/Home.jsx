@@ -17,7 +17,7 @@ function Home() {
 				scroll3='hover:text-[#A57D10]'
 			/>
 
-			<Hero title="Tumbuh Bersama Desa Cemara Jaya" img={background} />
+			<Hero textSize='text-5xl' title="Tumbuh Bersama Desa Cemara Jaya" img={background} />
 
 			<Content />
 

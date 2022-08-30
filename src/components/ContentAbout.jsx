@@ -27,7 +27,7 @@ const ContentAbout = () => {
       </div>
 
       <div className='flex justify-center py-10'>
-        <IGEmbed className='w-[326px]' url="https://www.instagram.com/reel/ChmnOrRp0hI/?utm_source=ig_web_copy_link" />
+        <IGEmbed url="https://www.instagram.com/reel/ChmnOrRp0hI/?utm_source=ig_web_copy_link" />
       </div>
 
     </div>
