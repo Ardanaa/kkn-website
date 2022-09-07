@@ -48,9 +48,9 @@ const Footer = () => {
                     </div>
                     <div>
                         <h2 class="mb-6 text-sm font-semibold text-white uppercase">Download Aplikasi Desa</h2>
-                        <a href='https://drive.google.com/file/d/18ZB_WXe9iNxkXa1dGKIgIn8FcxenFJjz/view?usp=sharing'>
+                        <Link to="/files/e-modul.apk" target="_blank">
                             <Button name='Download disini' />
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
