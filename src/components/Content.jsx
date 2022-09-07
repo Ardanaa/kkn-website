@@ -13,8 +13,8 @@ import { Link } from 'react-router-dom'
 const content = () => {
   return (
     <div>
-      <div className='flex flex-col-reverse md:flex-row gap-4 md:px-20 pt-20 px-10 justify-between'>
-        <div className='flex flex-col justify-center w-full'>
+      <div className='flex flex-col-reverse md:flex-row gap-4 md:px-20 pt-20 px-10 justify-between 3xl:justify-center'>
+        <div className='flex flex-col justify-center w-full 3xl:w-1/3'>
           <h1 className='md:text-xl text-xl mt-10 mb-5'>
             Desa Cemarajaya terbentuk dalam proses yang panjang sejak jaman Kolonial Belanda dahulu, jaman perang kemerdekaan, serta jaman kemerdekaan sekarang, sehingga terbentuk sebuah komunitas dengan karakter sosial, budaya, dan ekonomi yang membumi dalam wilayah yang sekarang secara administratif disebut Desa Cemarajaya.
           </h1>
@@ -24,14 +24,14 @@ const content = () => {
             </Link>
           </div>
         </div>
-        <div className='w-full flex justify-center'>
+        <div className='w-full 3xl:w-1/3 flex justify-center'>
           <img className='w-[600px]' src={kantorDesa} alt="" />
         </div>
       </div>
-      <img className='mb-50' src={wave} alt="" />
+      <img className='mb-50 w-full' src={wave} alt="" />
 
-      <div className='flex flex-col-reverse md:flex-row gap-4 pt-10 md:p-20 p-10 justify-between bg-[#A57D10]'>
-        <div className='flex flex-col justify-center w-full'>
+      <div className='flex flex-col-reverse md:flex-row gap-4 pt-10 md:p-20 p-10 justify-between 3xl:justify-center bg-[#A57D10]'>
+        <div className='flex flex-col justify-center w-full 3xl:w-1/3'>
           <h1 className='md:text-3xl text-xl mt-10 mb-2 font-bold'>
             Memberi peluang untuk UMKM <br />agar lebih dikenal dalam masyarakat
           </h1>
@@ -40,7 +40,7 @@ const content = () => {
             Voluptatem aliquid error recusandae earum quas debitis nam quo ullam ab autem deserunt laborum officia animi voluptas magnam reiciendis, commodi, quisquam inventore? Praesentium debitis ex vero amet rem nemo minus!
           </h1>
         </div>
-        <div className='w-full flex justify-center'>
+        <div className='w-full 3xl:w-1/3 flex justify-center'>
           <img className='w-[600px]' src={imgContent2} alt="" />
         </div>
       </div>
@@ -52,7 +52,7 @@ const content = () => {
           <h1 className="text-center mt-[100px] text-5xl font-bold ">
             Kontribusi Kami Untuk Desa Cemara Jaya
           </h1>
-          <div className='flex flex-col md:flex-row justify-between items-center w-[80%] mx-auto px-[50px] md:px-0 gap-12 py-[50px]'>
+          <div className='flex flex-col md:flex-row justify-between items-center w-[80%] mx-auto px-[50px] md:px-0 3xl:justify-center gap-12 py-[50px]'>
             <Card img={mengajar} title='Dalam Bidang Pendidikan' text='Membantu tenaga pengajar di Sekolah Dasar (SD) dalam kegiatan belajar mengajar.' />
             <Card img={rapat} title='Untuk Kemajuan Desa' text='Melakukan rapat rutin pada setiap minggunya untuk mengetahui kebutuhan desa.' />
             <Card img={imgContent} title='Untuk UMKM' text='Membuat aplikasi sebagai media promotor UMKM agar lebih dikenal dalam masyarakat.' />

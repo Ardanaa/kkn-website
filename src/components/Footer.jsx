@@ -6,7 +6,7 @@ import Button from './Button'
 const Footer = () => {
     return (
 
-        <footer class="p-4 bg-gray-900 sm:p-6">
+        <footer class="p-4 bg-gray-900 sm:p-6 3xl:px-96">
             <div class="md:flex md:justify-between">
                 <div class="mb-6 md:mb-0">
                     <a href="" class="flex items-center">

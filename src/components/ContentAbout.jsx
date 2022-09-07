@@ -32,7 +32,7 @@ const ContentAbout = () => {
         </p>
       </div>
       {/* tentang desa end */}
-      <img className='' src={wave} alt="" />
+      <img className='w-full' src={wave} alt="" />
 
       {/* visi misi start */}
       <section class="text-black-600 body-font bg-[#A57D10]">
@@ -87,7 +87,7 @@ const ContentAbout = () => {
 
       {/* struktur desa start */}
       <div className='md:p-20 p-10'>
-        <img src={strukturDesa} alt="" />
+        <img className='mx-auto' src={strukturDesa} alt="" />
       </div>
       {/* struktur desa end */}
 
