@@ -49,7 +49,7 @@ const Footer = () => {
                     <div>
                         <h2 class="mb-6 text-sm font-semibold text-white uppercase">Download Aplikasi Desa</h2>
                         <Link to="/files/e-modul.apk" target="_blank">
-                            <Button name='Download disini' />
+                            <Button hover='bg-[#A57D10]' name='Download disini' />
                         </Link>
                     </div>
                 </div>

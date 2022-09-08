@@ -18,7 +18,7 @@ const ContentAbout = () => {
       <div className='container mx-auto md:w-[50%] w-[80%] pt-10 text-justify '>
         <h1 className='text-center font-bold'>Tentang Desa</h1>
         <br />
-        <p className='leading-relaxed indent-8 text-gray-900'>Cemarajaya merupakan desa dengan luas 1141 Ha yang terdapat penduduk berjumlah sekitar 5000 jiwa. Masyarakat ini tersebar di 6 dusun, yaitu Cemara 1 selatan, cemara 1 utara, cemara 2 (Sekong), Pisangan, dan cemarajaya.
+        <p className='leading-relaxed indent-8 text-gray-900'>Cemarajaya merupakan desa dengan luas 1141 Ha yang terdapat penduduk berjumlah sekitar 5000 jiwa. Masyarakat ini tersebar di 6 dusun, yaitu Cemara I Selatan, Cemara I Utara, Cemara II, Sekong, Pisangan, dan Mekarjaya.
         </p>
         <p className='leading-relaxed indent-8 text-gray-900'>
           Masyarakat desa cemarajaya umumnya memiliki mata pencaharian sebagai buruh (tambang, nelayan, petani). Pada umumnya UMKM yang ada di desa ini masih berskala mikro dan menengah, usaha yang ada masih belum memanfaatkan digital sebagai bentuk peningkatan daya saing dan usaha pemasaran produknya. Sehingga UMKM yang ada masih melakukan perdagangan langsung antara penjual dan pembeli.

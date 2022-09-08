@@ -20,7 +20,7 @@ const content = () => {
           </h1>
           <div className='flex items-center justify-center'>
             <Link to='/about'>
-              <Button name='Baca Lebih Lanjut' />
+              <Button hover='bg-[#A57D10]' name='Baca Lebih Lanjut' />
             </Link>
           </div>
         </div>
@@ -36,9 +36,13 @@ const content = () => {
             Memberi peluang untuk UMKM <br />agar lebih dikenal dalam masyarakat
           </h1>
           <h1 className='md:text-lg text-base '>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus sapiente assumenda obcaecati dolores voluptates ullam optio rerum beatae consectetur quos, ex ipsum. Neque omnis ab fugiat aliquid cumque fugit laborum!
-            Voluptatem aliquid error recusandae earum quas debitis nam quo ullam ab autem deserunt laborum officia animi voluptas magnam reiciendis, commodi, quisquam inventore? Praesentium debitis ex vero amet rem nemo minus!
+            Dengan aplikasi desa ini kita bisa melihat ada UMKM apa saja yang terdapat di Desa Cemarajaya, Selain itu sudah terdapat kontak WhatsApp, sehingga ketika warga ingin memesan suatu produk, bisa langsung mehubungi UMKM tersebut.
           </h1>
+          <div className='mx-auto mt-5'>
+            <Link to="/files/e-modul.apk" target="_blank">
+              <Button hover='bg-white' name='Download Aplikasi Disini' />
+            </Link>
+          </div>
         </div>
         <div className='w-full 3xl:w-1/3 flex justify-center'>
           <img className='w-[600px]' src={imgContent2} alt="" />
